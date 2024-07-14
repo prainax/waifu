@@ -1,0 +1,9 @@
+#!/bin/bash
+
+CACHE_DIR="${HOME}/.cache/waifu/"
+PREV_IMGS="${HOME}/.cache/waifu/waifu.txt"
+
+LINK=${WAIFU_LINK1}
+
+WAIFU_LINK1='https://api.waifu.im/search?included_tags=raiden-shogun&included_tags=maid&height=>=2000'
+WAIFU_LINK2= 
