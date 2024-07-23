@@ -1,9 +1,111 @@
-#!/bin/bash
+#!/bin/env bash
 
-CACHE_DIR="${HOME}/.cache/waifu/"
-PREV_IMGS="${HOME}/.cache/waifu/waifu.txt"
+if [ -z ${XDG_CONFIG_HOME+x} ]; then
+    XDG_CONFIG_HOME="$HOME/.config"
+fi
 
-LINK=${WAIFU_LINK1}
+if [ -z ${XDG_CACHE_HOME+x} ]; then
+    XDG_CACHE_HOME="$HOME/.cache"
+fi
 
-WAIFU_LINK1='https://api.waifu.im/search?included_tags=raiden-shogun&included_tags=maid&height=>=2000'
-WAIFU_LINK2= 
+CACHEDIR="${XDG_CACHE_HOME}/styli.sh"
+if [ ! -d "$CACHEDIR" ]; then
+    mkdir -p "$CACHEDIR"
+fi
+
+WALLPAPER="$CACHEDIR/wallpaper.$EXT"
+
+function backend() {
+
+	# Image backend.
+	#
+	# Default:  'chafa'
+	# Values:   'caca', 'chafa', 'jp2a', 'iterm2', 'off',
+	#           'pot', 'termpix', 'pixterm', 'tycat', 'w3m', 'kitty'
+	# Flag:     -b, --backend
+	
+	backend=${1:=chafa}
+	printf "current image backend is $backend"
+	$backend  $WALLPAPER
+}
+
+function save(){}
+	wal_name=${1:=wallpaper}
+	printf "saving image...$wall_name.$EXT"
+	cp $WALLPAPER "$wall_name.$EXT"
+
+function die(){
+	    printf "ERR: %s\n" "$1" >&2
+	    exit 1
+}
+
+
+function fetch_img(){
+	USERAGENT="waifu"
+
+	heigth=${2:=1920}
+	width=${3:=1080}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	printf "$EXT..."
+	sleep 2
+
+
+
+
+}
+
+function feh(){
+	# Set image as wallpaper using feh
+	wall=${1:=WALLPAPER}
+
+
+
+
+}
+
+
+usage() {
+    echo "Usage: waifu
+    [-t | --tags   <tag>]>
+	
+    	available tags:
+		versatile: maid, waifu, marin-kitagawa, mori-calliope, raiden-shogun, oppai, selfies, uniform, kamisato-ayaka
+		nsfw: ass, hentai, milf, oral, paizuri, ecchi, ero
+
+    [-h | --height <height>]
+    [-w | --width  <width>]
+    [-b | --fehbg  <feh bg opt>]
+    [-c | --fehopt <feh opt>]
+    [-s | --save   <location>]	<Save current image>
+    "
+    exit 2
+}
+	
+
+
