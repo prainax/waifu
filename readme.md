@@ -16,8 +16,11 @@ waifu is a bash script that aims to automate the tedious process of finding new 
 # Requirements
 
 feh:            for seting background
+
 chafa:          for terminal graphics
+
 curl and wget:  for downloading image
+
 jq:             json parsing
 
 # usage
