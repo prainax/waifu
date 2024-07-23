@@ -5,11 +5,13 @@ waifu is a bash script that aims to automate the tedious process of finding new 
 
 # API's
 
-- [waifu.pics](https://github.com/Waifu-pics/waifu-api)
-  [-](https://waifu.pics/docs)
+- waifu.pics
+- [github](https://github.com/Waifu-pics/waifu-api)
+- [docs](https://waifu.pics/docs)
 
-- [waifu.im](https://github.com/Waifu-im/waifu-docs)
-  [-](https://docs.waifu.im/)
+- waifu.im
+- [github](https://github.com/Waifu-im/waifu-docs)  
+- [docs](https://docs.waifu.im/)
 
 # Requirements
 
@@ -26,9 +28,13 @@ jq:             json parsing
 -t, --tags                    tag to fetch specific type of image
     sfw:
         
-        ['maid', 'waifu', 'marin-kitagawa', 'mori-calliope', 'raiden-shogun', 'oppai', 'selfies', 'uniform', 'kamisato-ayaka'],
+        ['maid', 'waifu', 'marin-kitagawa', 'mori-calliope', 'raiden-shogun', 
+         'oppai', 'selfies', 'uniform', 'kamisato-ayaka'],
 
-        ['neko', 'shinobu', 'megumin', 'bully', 'cuddle', 'cry', 'hug', 'awoo', 'kiss', 'lick', 'pat', 'smug', 'bonk', 'yeet', 'blush', 'smile', 'wave', 'highfive', 'handhold', 'nom', 'bite', 'glomp', 'slap', 'kill', 'kick', 'happy', 'wink', 'poke', 'dance', 'cringe']
+        ['neko', 'shinobu', 'megumin', 'bully', 'cuddle', 'cry', 'hug', 'awoo', 
+         'kiss', 'lick', 'pat', 'smug', 'bonk', 'yeet', 'blush', 'smile', 'wave', 
+         'highfive', 'handhold', 'nom', 'bite', 'glomp', 'slap', 'kill', 'kick', 
+         'happy', 'wink', 'poke', 'dance', 'cringe']
 
     nsfw:
         ['waifu', 'neko', 'trap', 'blowjob']
