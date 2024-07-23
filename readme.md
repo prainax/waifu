@@ -6,12 +6,12 @@ waifu is a bash script that aims to automate the tedious process of finding new 
 # API's
 
 - waifu.pics
-- [github](https://github.com/Waifu-pics/waifu-api)
-- [docs](https://waifu.pics/docs)
+    - [github](https://github.com/Waifu-pics/waifu-api)
+    - [docs](https://waifu.pics/docs)
 
 - waifu.im
-- [github](https://github.com/Waifu-im/waifu-docs)  
-- [docs](https://docs.waifu.im/)
+    - [github](https://github.com/Waifu-im/waifu-docs)  
+    - [docs](https://docs.waifu.im/)
 
 # Requirements
 
